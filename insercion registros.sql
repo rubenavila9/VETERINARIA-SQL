@@ -1,11 +1,5 @@
-insert into MEMBRESIA values
-(1, '24-12-2015','24-12-2020'),
-(2, '20-08-2017','20-08-2022'),
-(3, '10-03-2019','10-03-2024');
 
-select * from MEMBRESIA;
-
-insert into PELICULA values
+insert into CLIENTE values
 (1, 'Titanic','Estados Unidos',2007, 'Drama','Ingles',3, '11-08-2020'),
 (2, 'Buscando a Nemo','España',2003, 'Infantil','Chino',4, '12-08-2020'),
 (3, 'El señor de los Anillos','Grecia',2001, 'Accion','Coreano',5, '13-08-2020'),
