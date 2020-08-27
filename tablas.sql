@@ -11,11 +11,13 @@ create table CLIENTE (
    constraint PK_CLIENTE primary key (ID_CLIENTE)
 )
 go
-create table MEMBRESIA (
-   ID_MEMBRESIA             int                  not null,
-   FECHA_EXPEDICION     varchar(50)        null,
-   FECHA_EXPIRACION     varchar(50)       null,
-   constraint PK_MEMBRESIA primary key (ID_MEMBRESIA)
+create table PACIENTE (
+   ID_CLIENTE             int                  not null,
+   ALIAS_MASCOTA     varchar(50)        null,
+   ESPECIE     varchar(50)       null,
+   RAZA     varchar(50)       null,
+   COLOR     varchar(50)       null,
+   constraint PK_CLIENTE primary key (ID_CLIENTE)
 )
 go
 create table PELICULA (
