@@ -1,7 +1,7 @@
 create table CLIENTE (
    ID_CLIENTE            int                  not null,
-   NOMBRES_CLIENTE       varchar(50)          null,
-   APELLIDOS_CLIENTE     varchar(50)          null,
+   NOMBRE_CLIENTE       varchar(50)          null,
+   APELLIDO_CLIENTE     varchar(50)          null,
    DIRECCION             varchar(20)          null,
    TELEFONO              varchar(20)          null,
    CORREO                varchar(50)          null,
