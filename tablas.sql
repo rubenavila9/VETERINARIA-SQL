@@ -1,44 +1,37 @@
 create table CLIENTE (
    ID_CLIENTE            int                  not null,
-   ID_MEMBRESIA     int                 null,
    NOMBRES_CLIENTE       varchar(50)          null,
    APELLIDOS_CLIENTE     varchar(50)          null,
-   IDENTIFICACION_CLIENTE varchar(20)          null,
-   GENERO               varchar(20)          null,
-   TELEFONO_CONVENCIONAL varchar(50)          null,
-   TELEFONO_MOVIL        varchar(50)          null,
-   EMAIL_CLIENTE         varchar(30)          null,
+   DIRECCION             varchar(20)          null,
+   TELEFONO              varchar(20)          null,
+   CORREO                varchar(50)          null,
    constraint PK_CLIENTE primary key (ID_CLIENTE)
 )
 go
 create table PACIENTE (
-   ID_CLIENTE             int                  not null,
-   ALIAS_MASCOTA     varchar(50)        null,
-   ESPECIE     varchar(50)       null,
-   RAZA     varchar(50)       null,
-   COLOR     varchar(50)       null,
+   id_paciente            int                  not null,
+   nombre          varchar(50)       null,
+   especie         varchar(50)       null,
+   raza            varchar(50)       null,
+   edad            varchar(50)       null,
+   alergias        varchar(50)       null,
+   vacunas         varchar(50)       null,
+   ID_CLIENTE            int                  not null,
    constraint PK_CLIENTE primary key (ID_CLIENTE)
 )
 go
-create table PELICULA (
-   ID_PELICULA          int                  not null,
-   TITULO_PELICULA         varchar(50)          null,
-   PAIS_PELICULA              varchar(30)          null,
-AÑO_PELICULA              int          null,
-GENERO_PELICULA              varchar(20)          null,
-IDIOMA_PELICULA              varchar(20)          null,
-   PRECIO_PELICULA   numeric(5,2)         null,
-   FECHA_ULTIMOALQUILER   varchar(50)             null,
-   constraint PK_PELICULA primary key (ID_PELICULA)
+create table VACUNA (
+   id_paciente          int                not null,
+   fecha_vacuna         varchar(50)        null,
+   enfermedad           varchar(30)        null,
+   fecha_proxima              int          null,
+   constraint PK_VACUNA primary key (id_paciente)
 )
 go
-create table ALQUILER_PELICULA (
-   ID_PELICULA          int                  not null,
-   ID_CLIENTE            int                  not null,
-   ID_ALQUILER_PELICULA           int                  not null,
-   FECHAENTREGA_PELICULA  varchar(50)    null,
-   FECHASALIDA_PELICULA  varchar(50)    null,
-   constraint PK_ALQUILER_PELICULA primary key (ID_PELICULA, ID_CLIENTE,
- ID_ALQUILER_PELICULA)
+create table PESO (
+   id_paciente          int                  not null,
+   fecha             varchar(50)    null,
+   peso_paciente     varchar(50)    null,
+   constraint PK_PESO primary key (id_paciente)
 )
 go
