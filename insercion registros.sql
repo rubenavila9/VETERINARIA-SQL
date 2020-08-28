@@ -29,4 +29,4 @@ insert into VACUNA values
 (3,'16/8/2020','vitaminas','5/10/2020'),
 (4,'20/8/2020','parasitaria','3/10/2020'),
 
-select * from PESO;
+select * from VACUNA;
