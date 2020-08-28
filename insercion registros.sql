@@ -1,23 +1,32 @@
 
 insert into CLIENTE values
-(1, 'Titanic','Estados Unidos',2007, 'Drama','Ingles',3, '11-08-2020'),
-(2, 'Buscando a Nemo','España',2003, 'Infantil','Chino',4, '12-08-2020'),
-(3, 'El señor de los Anillos','Grecia',2001, 'Accion','Coreano',5, '13-08-2020'),
-(4, 'Pulp Fiction','Venezuela',1995, 'Terror','Español',3, '14-08-2020'),
-(5, 'Te amo','El Congo',1993, 'Romance','Chino',6, '15-08-2020');
+(123242424, 'Ruben','Avila','barrio cuba', '09686389390','ruben@gmail.com'),
+(128883913, 'deiby','vera','barrio altamira', '0938173823','deiby@gmail.com'),
+(113233142, 'ricardo','lugo','barrio cuba', '09839281992','ricardo@gmail.com'),
+(131313313, 'ariel','zambrano','barrio cuba', '0917389283','ariel@gmail.com'),
 
-select * from PELICULA;
+select * from CLIENTE;
 
-insert into cliente values
-(1, 1, 'Vanessa Nicole','Macias Mera', '1257894562','femenino','052487896','0982222222','vnmm@hotmail.com'),
-(2, 2, 'Javier','Lopez Lopez', '1257894585', 'masculino','05249896','0921111111','javi27@hotmail.com'),
-(3, 3, 'María Lourdes','Auz García', '1285294585', 'femenino','052498876','0925555555','mariaauz@hotmail.com');
+insert into PACIENTE values
+(1, 'benji','perro','cocker', 'masculino','3 años','ninguna','rabia',123242424),
+(2, 'pelussa','perro','mestiza', 'femenino','2 años','ninguna','rabia',128883913),
+(3, 'roco','perro','labrador', 'masculino','1 años','ninguna','rabia',113233142),
+(4, 'misi','gato','persa', 'masculino','6 años','ninguna','rabia',123242424)
 
-select * from cliente;
+select * from PACIENTE;
 
-insert into alquiler_pelicula values
-(1,1,1, '02-08-2020', '03-08-2020'),
-(3,2,2, '05-08-2020', '07-08-2020'),
-(5,3,3, '06-08-2020', '09-08-2020');
+insert into PESO values
+(1,'10/8/2020','10kg'),
+(2,'4/8/2020','5kg'),
+(3,'5/8/2020','6kg'),
+(4,'9/8/2020','3kg'),
 
-select * from alquiler_pelicula;
+select * from PESO;
+
+insert into VACUNA values
+(1,'10/8/2020','parasitaria','20/10/2020'),
+(2,'12/8/2020','rabia','18/10/2020'),
+(3,'16/8/2020','vitaminas','5/10/2020'),
+(4,'20/8/2020','parasitaria','3/10/2020'),
+
+select * from PESO;
