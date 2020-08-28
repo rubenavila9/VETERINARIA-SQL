@@ -1,3 +1,4 @@
+CREATE DATABASE VETERINARIA;
 create table CLIENTE (
    ID_CLIENTE            int                  not null,
    NOMBRE_CLIENTE       varchar(50)          null,
